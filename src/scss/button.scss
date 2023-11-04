@@ -1,0 +1,89 @@
+$color: #687EFF;
+$colorHover: #80B3FF;
+
+button {
+    font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    padding: 4px 14px;
+    font-size: 14px;
+    height: 32px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease-in-out 250ms;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+// defaault
+.default {
+    border: 2px solid $color;
+    color: $color;
+    
+    background: none;
+    &:hover {
+        border: 2px solid $colorHover;
+        color: $colorHover;
+    }
+}
+
+// primary
+.primary {
+    border: 2px solid $color;
+    background-color: $color;
+    color: #fff;
+    &:hover {
+        border: 2px solid $colorHover;
+        background-color: $colorHover;
+    }
+}
+
+// dashed
+.dashed {
+    border: 2px dotted $color;
+    color: $color;
+    background: none;
+    &:hover {
+        border: 2px dotted $colorHover;
+        color: $colorHover;
+    }
+}
+
+// text
+.text {
+    border: 2px solid transparent;
+    background: none;
+    &:hover {
+        border: 2px solid #F1EFEF;
+        background-color: #F1EFEF;
+    }
+}
+
+//link
+.link {
+    border: 2px solid transparent;
+    background: none;
+    color: $color;
+    &:hover {
+        color: $colorHover;
+    }
+}
+
+.full {
+    width: 100%;
+}
+
+//sizes
+.sm {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 4px;
+    height: 24px;
+}
+
+.lg {
+    font-size: 16px;
+    padding: 6px 14px;
+    height: 40px;
+}
